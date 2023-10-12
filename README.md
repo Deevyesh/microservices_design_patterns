@@ -24,7 +24,9 @@
 **EDD-Event Driven Design:** It focuses on asynchronous communication between microservices through the use of events. i.e. Kafka, RabbitMQ.
 
 **Saga:** A way to manage complex, long-running transactions or processes in a distributed system by breaking into smaller, more manageable steps.
+
   **a. Choreography-** All services of the distributed transaction, publish a new event after success or failure & inform to next (S) or previous(F) Saga.
+  
   **b. Orchestration-** A single orchestrator (arranger) manages all transactions and directs services to execute local transactions.Eg Camel, Mulesoft
 
 **Strangler:** A way to replace old (monolithic) system without disrupting existing system to a new microservice system in gradual approach.
@@ -34,8 +36,14 @@
 **Service Discovery:** Allows you to dynamically discover the services at runtime and communicate with the services without hard coded URLs. i.e. Consul and Netflix Eureka.
 
 **Deployment Strategies:** 
-  **Blue/Green:** Switching between the current production version and a new version, 
-  **Canary:** Deploy new version to small users(10%), 
-  **A/B Testing:** Deploys two versions & test(TogglZ), 
+
+  **Blue/Green:** Switching between the current production version and a new version
+  
+  **Canary:** Deploy new version to small users(10%)
+  
+  **A/B Testing:** Deploys two versions & test(TogglZ)
+  
   **Shadow Deployment**
-  **Feature Toggle Deployment** (Togglz library Spring Boot).
+  
+  **Feature Toggle Deployment** (Togglz library Spring Boot)
+  
